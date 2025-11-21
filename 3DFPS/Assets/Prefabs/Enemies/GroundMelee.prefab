@@ -254,7 +254,7 @@ MonoBehaviour:
   canMove: 1
   target: {fileID: 0}
   attacker: {fileID: 5344201165240082450}
-  maximumMoveRange: 60
+  maximumMoveRange: 30
   maximumAttackRange: 5
   doesAttack: 1
   moveWhileAttacking: 0
@@ -314,9 +314,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teamId: 1
-  defaultHealth: 2
-  maximumHealth: 2
-  currentHealth: 2
+  defaultHealth: 3
+  maximumHealth: 3
+  currentHealth: 3
   invincibilityTime: 0.5
   isAlwaysInvincible: 0
   useLives: 0
@@ -364,7 +364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb0e35e8111ce0944b053d733f9cffb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 45
+  lifetime: 360
   destroyChildrenOnDeath: 1
 --- !u!114 &1420941988157335598
 MonoBehaviour:
