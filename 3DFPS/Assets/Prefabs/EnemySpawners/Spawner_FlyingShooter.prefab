@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 4699839180939646023, guid: 439a8a9d721048a46bec9d47581b4c1d, type: 3}
   spawnMethod: 0
-  spawnRate: 10
+  spawnRate: 30
   spawnAreaSize: {x: 2, y: 2, z: 2}
   showSpawnArea: 1
 --- !u!114 &2737241954218926265
