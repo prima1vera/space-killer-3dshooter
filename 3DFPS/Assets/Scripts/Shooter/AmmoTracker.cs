@@ -46,7 +46,7 @@ public class AmmoTracker : MonoBehaviour
     // The string to use to save/load the ammo types stored by player prefs
     public const string ALLSAVEDAMMOPREFSSTRING = "AllAmmo";
     // The maximum amount of ammo of a single type that the player can hold at once.
-    public const int MAXAMMO = 100;
+    public const int MAXAMMO = 1000;
     #endregion
     #endregion
 
@@ -145,7 +145,13 @@ public class AmmoTracker : MonoBehaviour
                     int ammo = PlayerPrefs.GetInt(prefName);
                     string ammoIDString = "0" + prefName.Substring(AMMOPLAYERPREFSSTRING.Length);
                     int ammoID = int.Parse(ammoIDString);
-                    _instance._ammo[ammoID] = ammo;
+                    if(ammo == 0)
+                    {
+                        _instance._ammo[ammoID] = 10;
+                    } else
+                    {
+                        _instance._ammo[ammoID] = ammo;
+                    }
                 }
             }
         }
